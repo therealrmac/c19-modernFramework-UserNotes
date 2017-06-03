@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Note List</h1>
+  <div class="input-group col-xs-6 col-xs-offset-3">
+  </div>
+  <div ng-repeat="item in notes">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-xs-7">{{item.task}}</div>
+        <div class="col-xs-2">{{item.dueDate}}</div>
+        <div class="col-xs-1">{{item.assignedTo}}</div>
+      </div>
+    </div>
+  </div>
+</div>

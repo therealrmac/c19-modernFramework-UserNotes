@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="firebaseApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+	<title>Firebase Angular</title>
+</head>
+<body>
+
+	<div ng-include="'partials/navbar.html'"></div>
+
+	<div ng-view></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/AppConstants.js"></script>
+<script type="text/javascript" src="app/AppConfig.js"></script>
+<script type="text/javascript" src="app/factories/AuthFactory.js"></script>
+<script type="text/javascript" src="app/factories/fbFactory.js"></script>
+<script type="text/javascript" src="app/controller/AuthCtrl.js"></script>
+<script type="text/javascript" src="app/controller/notectrl.js"></script>
+<script type="text/javascript" src="app/controller/addnoteCtrl.js"></script>
+</body>
+</html>
